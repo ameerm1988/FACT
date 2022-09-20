@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5c8f045964.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lobster&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      /* background: #333; */
+      color: #ffffff;
+      background-color: white;
+
+    }
+
+
+    .num {
+      font-family: 'Lobster', cursive;
+      font-size: 60px;
+      color: #e77500;
+
+      position: absolute;
+      bottom: 25%;
+      left: 12%;
+
+    }
+
+    .num2 {
+      font-family: 'Lobster', cursive;
+      font-size: 35px;
+      color: #e77500;
+      position: absolute;
+      left: 30%;
+    }
+
+    .textnum {
+      font-size: 25px;
+      color: white;
+      position: absolute;
+    }
+
+    .textnum2 {
+      font-size: 30px;
+      color: white;
+      position: absolute;
+      padding-left: 2%;
+    }
+
+    .plus {
+      font-family: 'Lobster', cursive;
+      font-size: 60px;
+      color: #e77500;
+      position: absolute;
+      bottom: 25%;
+      left: 5%;
+    }
+
+    h3,
+    h4,.total {
+
+      position: absolute;
+      bottom: 10%;
+      left: 16px;
+    }
+
+
+    .bg {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(85%);
+    }
+
+    .bg:hover {
+
+      filter: grayscale(0%);
+    }
+
+    h1 {
+      font-family: Georgia;
+      font-size: 60px;
+    }
+
+    nav {
+      background-color: black;
+    }
+
+    li:hover {
+
+      background-color: rgb(136, 132, 132);
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="text-dark p-3" style="font-size: 85px;">Facts & Figures</h1>
+ 
+
+  <nav class="navbar navbar-expand-lg navbar-dark " style="margin: auto;">
+    <div class="container">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item px-5 border "><a class="nav-link active" href="#overrall">OVERALL</a></li>
+          <li class="nav-item px-5 border"><a class="nav-link active" href="#academic">ACADEMICS</a></li>
+          <li class="nav-item px-5 border"><a class="nav-link active" href="#faculty">FACULTY</a></li>
+          <li class="nav-item px-5 border"><a class="nav-link active" href="#student">STUDENT</a></li>
+          <li class="nav-item px-5 border"><a class="nav-link active" href="#research">RESEARCH</a></li>
+          <li class="nav-item px-5 border"><a class="nav-link active" href="#prize"> AWARDS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="margin: auto;">
+    <img src="https://i.ibb.co/PYS9zS8/COAMSR.jpg" style="width:100% ;height: 300px;">
+  </div>
+
+  <section class="my-5 container-{breakpoint} " id="academic">
+    <h1 class="text-dark p-5">Academic Affairs</h1>
+    <div class="row row-cols-1 row-cols-md-2 ">
+      <div class="col-md-6 bg" style="background-image:url(https://i.ibb.co/XyxDFNw/No-of-Program.png);height:500px ">
+        <span class="num" data-val="9"> 0 </span>
+        <h4>Programs + CAMS</h4>
+      </div>
+      <div class="col-md-6 ">
+        <div class="row row-cols-1 row-cols-md-2 ">
+          <div class=" col bg "
+            style="background-image:url(https://i.ibb.co/N6qw8pK/course.jpg) ;height:250px">
+            <span class="num" data-val="210">0</span>
+            <h4 class="text-dark fw-bold fs-4">Courses Male & Female</h4>
+          </div>
+
+          <div class="col bg "
+            style="background-image:url(https://i.ibb.co/KsMJpLF/No-Of-Teaching-Session.jpg) ;height:250px">
+            <h4 style="bottom: 30% ;margin-bottom: 5%;">Teaching sessions</h4>
+            <span class="textnum" style="bottom: 20%"> Practical </span>
+            <span class="num" data-val="3840" style="bottom: 15%;font-size: 35px;left: 40%;"> 0 </span>
+            <br>
+            <span class="textnum" style="bottom: 5%"> Theory </span>
+            <span class="num" data-val="3702" style="bottom: 0%;font-size: 35px; left: 40%;"> 0 </span>
+
+          </div>
+          <div class="col bg "
+            style="background-image:url(https://i.ibb.co/Fqqtdn2/NoExam.png) ;height:250px">
+
+            <span class="num" data-val="787">0</span>
+            <h4 class="text-dark fw-bold fs-3">Exams</h4>
+          </div>
+          <div class="col bg "
+            style="background-image:url(https://i.ibb.co/bRNtG4K/No-Of-Academic-Counseling.png) ;height:250px">
+            <span class="num" data-val="1972">0</span>
+            <h4>Academic counseling sessions</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faculty" class=" container-{breakpoint} my-5">
+    <h1 class="text-dark p-5 mt-5">Faculty</h1>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col-md-6 bg  "
+        style="background-image:url(https://i.ibb.co/8NkRpTD/No-Of-Faculty.jpg);height:500px ;">
+
+        <span class="num" data-val="109">0</span>
+        <h4>Faculty</h4>
+      </div>
+      <div class=" col-md-6">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col bg "
+            style="background-image:url(https://i.ibb.co/MBFV2Qc/Ph-DHolder.png) ;height:500px">
+            <span class="num" data-val="33">0</span>
+            <h4>30% PhD holders</h4>
+          </div>
+          <div class="col bg "
+            style="background-image:url(https://i.ibb.co/5nCZr8d/Scolars.png) ;height:500px">
+            <span class="num" data-val="54">0</span>
+            <h4>49% Scholars</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="student" class="container-{breakpoint}  my-5">
+    <h1 class="text-dark p-5 mt-5">Student</h1>
+    <div class="row row-cols-1 row-cols-md-2 " >
+      <div class=" col-md-6 bg" style="background-image:url(https://i.ibb.co/T4rj11S/No-Current-Students.jpg);height:500px">
+        <span class="num" data-val="493">0</span>
+        <h4>Current Students 285 Male & 208 Female</h4>
+      </div>
+      <div class=" col-md-6 bg" style="background-image:url(https://i.ibb.co/PCq14PZ/NoAlumni.jpg) ;height:500px">
+        <span class="num" data-val="1637">0</span>
+        <h4>30% PhD holders</h4>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="research" class="container-{breakpoint} my-5 ">
+    <h1 class="text-dark p-5 mt-5">Research</h1>
+    <div class="row row-cols-1 row-cols-md-2 " >
+      <div class=" col-md-6 bg" style="background-image:url(https://i.ibb.co/g9HLdxS/Nofunded-Research.png);height:500px">
+        <br>
+       <span class="text-dark total" style="bottom: 50%;font-size: 50px;"> Total: SR </span>
+       <span class="num " data-val="4585800"  style="bottom: 50%;left: 35%;">0</span>
+     
+        <br>
+        <span class="textnum2" style="bottom: 30%;">External fund: SR</span>
+        <span class="num2" data-val="1252800"
+              style="bottom: 30%;left: 45%;">0</span>
+        <br>
+        <span class="textnum2" style="bottom: 20%;">Internal fund: SR</span>
+        <span class="num2" data-val="3333000"
+              style="bottom: 20%;left: 45%;">0</span>
+        </h4>
+      </div>
+      <div class=" col-md-6">
+        <div class="row row-cols-1 row-cols-md-2 ">
+          <div class=" col bg "
+            style="background-image:url(https://i.ibb.co/HrbtB7z/pulished-reaserch.jpg) ;height:500px">
+            <h4 style="bottom: 35% ;margin-bottom: 5%;" class="text-dark fw-bold fs-4">Published Reasearchs </h4>
+            <br><span class="textnum" style="bottom: 24%;">2018 :</span> <span class="num2" data-val="15"
+              style="bottom: 24%;">0</span>
+            <br><span class="textnum" style="bottom: 16%;">2019 :</span><span class="num2" data-val="35"
+              style="bottom: 16%;">0</span>
+            <br><span class="textnum" style="bottom: 8%;">2020 :</span><span class="num2" data-val="64"
+              style="bottom: 8%;">0</span>
+            <br><span class="textnum" style="bottom: 0%;">2021 :</span> <span class="num2" data-val="48"
+              style="bottom: 0%;">0</span>
+
+          </div>
+          <div class="col bg "
+            style="background-image:url(https://i.ibb.co/fNfC8Dt/Research-Under-Process.png) ;height:500px">
+            <span class="num" data-val="65">0</span>
+            <h4 class="text-dark fw-bold fs-4">Research Under Process</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prize" class="container-{breakpoint}  my-5">
+    <h1 class="text-dark p-5 mt-5">Prize and Award</h1>
+    <div class="row row-cols-1 row-cols-md-2 " >
+      <div class=" col-md-6 bg  "
+        style="background-image:url(https://i.ibb.co/mTBw4vv/No-Of-Deanshipof-Students-Award.jpg);height:500px">
+        <span class="num" data-val="8">0</span>
+        <h4>Deanship of Students Award</h4>
+      </div>
+      <div class=" col-md-6">
+        <div class="row row-cols-1 row-cols-md-2 ">
+          <div class="col bg "
+            style="background-image:url(https://i.ibb.co/FB6M3nz/Emloyee-Of-The-Month.png) ;height:500px">
+            <span class="num " data-val="8">0</span>
+            <h4 class="text-dark fw-bold fs-3">Employee Of The Month</h4>
+          </div>
+
+          <div class="col bg "
+            style="background-image:url(https://i.ibb.co/BGZhFd7/No-Presidental-Award.png) ;height: 500px;">
+            <span class="num" data-val="5">0</span>
+            <h4>Presidental Award</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    let valueDisplays = document.querySelectorAll(".num,.num2");
+    let interval = 1000;
+
+    valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if (startValue == endValue) {
+          clearInterval(counter);
+        }
+      }, duration);
+    });
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
