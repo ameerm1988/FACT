@@ -21,98 +21,71 @@
     }
 
     body {
-      /* background: #333; */
-      color: #ffffff;
+      color: black;
       background-color: white;
-
     }
-
 
     .num {
       font-family: 'Lobster', cursive;
-      font-size: 60px;
+      font-size: 4rem; /* Responsive font size, adjust as needed */
       color: #e77500;
-
-      position: absolute;
-      bottom: 25%;
+      position: absolute; /* Retained for positioning, ensure it displays as required */
+      bottom: 30%;
       left: 12%;
-
     }
 
     .num2 {
       font-family: 'Lobster', cursive;
-      font-size: 35px;
+      font-size: 2.5rem; /* Responsive font size */
       color: #e77500;
       position: absolute;
       left: 30%;
     }
 
     .textnum {
-      font-size: 25px;
-      color: white;
+      font-size: 1.5rem; /* Responsive font size */
+      color: black;
       position: absolute;
+      font-weight: bold;
     }
 
     .textnum2 {
-      font-size: 30px;
-      color: white;
+      font-size: 1.8rem; /* Responsive font size */
+      color: black;
       position: absolute;
       padding-left: 2%;
-    }
-
-    .plus {
-      font-family: 'Lobster', cursive;
-      font-size: 60px;
-      color: #e77500;
-      position: absolute;
-      bottom: 25%;
-      left: 5%;
-    }
-
-    h3,
-    h4,.total {
-
-      position: absolute;
-      bottom: 10%;
-      left: 16px;
-    }
-
-
-    .bg {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      filter: grayscale(85%);
-    }
-
-    .bg:hover {
-
-      filter: grayscale(0%);
+      font-weight: bold;
     }
 
     h1 {
       font-family: Georgia;
-      font-size: 60px;
+      font-size: 3rem; /* Responsive font size */
     }
 
     nav {
       background-color: black;
     }
 
-    li:hover {
+    .bg {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(85%);
+      height: auto; /* Allow it to scale without fixed height */
+      min-height: 200px; /* Ensures each section has a minimum height */
+    }
 
-      background-color: rgb(136, 132, 132);
-      font-weight: bold;
+    .bg:hover {
+      filter: grayscale(0%);
     }
   </style>
 </head>
 
 <body>
 
-  <h1 class="text-dark p-3" style="font-size: 85px;">Facts & Figures</h1>
- 
+  <h1 class="text-dark p-3">Facts & Figures</h1>
 
-  <nav class="navbar navbar-expand-lg navbar-dark " style="margin: auto;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-image:url(https://i.ibb.co/PYS9zS8/COAMSR.jpg);">
     <div class="container">
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -120,55 +93,46 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-          <li class="nav-item px-5 border "><a class="nav-link active" href="#overrall">OVERALL</a></li>
-          <li class="nav-item px-5 border"><a class="nav-link active" href="#academic">ACADEMICS</a></li>
-          <li class="nav-item px-5 border"><a class="nav-link active" href="#faculty">FACULTY</a></li>
-          <li class="nav-item px-5 border"><a class="nav-link active" href="#student">STUDENT</a></li>
-          <li class="nav-item px-5 border"><a class="nav-link active" href="#research">RESEARCH</a></li>
-          <li class="nav-item px-5 border"><a class="nav-link active" href="#prize"> AWARDS</a></li>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item px-5"><a class="nav-link active" href="#overall">OVERALL</a></li>
+          <li class="nav-item px-5"><a class="nav-link active" href="#academic">ACADEMICS</a></li>
+          <li class="nav-item px-5"><a class="nav-link active" href="#faculty">FACULTY</a></li>
+          <li class="nav-item px-5"><a class="nav-link active" href="#student">STUDENT</a></li>
+          <li class="nav-item px-5"><a class="nav-link active" href="#research">RESEARCH</a></li>
+          <li class="nav-item px-5"><a class="nav-link active" href="#prize">AWARDS</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div style="margin: auto;">
-    <img src="https://i.ibb.co/PYS9zS8/COAMSR.jpg" style="width:100% ;height: 300px;">
-  </div>
 
-  <section class="my-5 container-{breakpoint} " id="academic">
+  <section class="my-5 container" id="academic">
     <h1 class="text-dark p-5">Academic Affairs</h1>
-    <div class="row row-cols-1 row-cols-md-2 ">
-      <div class="col-md-6 bg" style="background-image:url(https://i.ibb.co/XyxDFNw/No-of-Program.png);height:500px ">
-        <span class="num" data-val="9"> 0 </span>
+    <div class="row row-cols-1 row-cols-md-2 g-4"> <!-- Added gap -->
+      <div class="col bg" style="background-image:url(https://i.ibb.co/XyxDFNw/No-of-Program.png);">
+        <span class="num">9</span>
         <h4>Programs + CAMS</h4>
       </div>
-      <div class="col-md-6 ">
-        <div class="row row-cols-1 row-cols-md-2 ">
-          <div class=" col bg "
-            style="background-image:url(https://i.ibb.co/N6qw8pK/course.jpg) ;height:250px">
-            <span class="num" data-val="210">0</span>
+      <div class="col">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col bg" style="background-image:url(https://i.ibb.co/N6qw8pK/course.jpg);">
+            <span class="num">210</span>
             <h4 class="text-dark fw-bold fs-4">Courses Male & Female</h4>
           </div>
 
-          <div class="col bg "
-            style="background-image:url(https://i.ibb.co/KsMJpLF/No-Of-Teaching-Session.jpg) ;height:250px">
-            <h4 style="bottom: 30% ;margin-bottom: 5%;">Teaching sessions</h4>
-            <span class="textnum" style="bottom: 20%"> Practical </span>
-            <span class="num" data-val="3840" style="bottom: 15%;font-size: 35px;left: 40%;"> 0 </span>
+          <div class="col bg" style="background-image:url(https://i.ibb.co/KsMJpLF/No-Of-Teaching-Session.jpg);">
+            <h4>Teaching sessions</h4>
+            <span class="textnum">Practical</span>
+            <span class="num" style="font-size: 35px;">3840</span>
             <br>
-            <span class="textnum" style="bottom: 5%"> Theory </span>
-            <span class="num" data-val="3702" style="bottom: 0%;font-size: 35px; left: 40%;"> 0 </span>
-
+            <span class="textnum">Theory</span>
+            <span class="num" style="font-size: 35px;">3702</span>
           </div>
-          <div class="col bg "
-            style="background-image:url(https://i.ibb.co/Fqqtdn2/NoExam.png) ;height:250px">
-
-            <span class="num" data-val="787">0</span>
-            <h4 class="text-dark fw-bold fs-3">Exams</h4>
+          <div class="col bg" style="background-image:url(https://i.ibb.co/Fqqtdn2/NoExam.png);">
+            <span class="num">787</span>
+            <h4 class="text-dark fw-bold">Exams</h4>
           </div>
-          <div class="col bg "
-            style="background-image:url(https://i.ibb.co/bRNtG4K/No-Of-Academic-Counseling.png) ;height:250px">
-            <span class="num" data-val="1972">0</span>
+          <div class="col bg" style="background-image:url(https://i.ibb.co/bRNtG4K/No-Of-Academic-Counseling.png);">
+            <span class="num">1972</span>
             <h4>Academic counseling sessions</h4>
           </div>
         </div>
@@ -176,139 +140,99 @@
     </div>
   </section>
 
-  <section id="faculty" class=" container-{breakpoint} my-5">
+  <section id="faculty" class="container my-5">
     <h1 class="text-dark p-5 mt-5">Faculty</h1>
-    <div class="row row-cols-1 row-cols-md-2">
-      <div class="col-md-6 bg  "
-        style="background-image:url(https://i.ibb.co/8NkRpTD/No-Of-Faculty.jpg);height:500px ;">
-
-        <span class="num" data-val="109">0</span>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col bg" style="background-image:url(https://i.ibb.co/8NkRpTD/No-Of-Faculty.jpg);">
+        <span class="num">109</span>
         <h4>Faculty</h4>
       </div>
-      <div class=" col-md-6">
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col bg "
-            style="background-image:url(https://i.ibb.co/MBFV2Qc/Ph-DHolder.png) ;height:500px">
-            <span class="num" data-val="33">0</span>
+      <div class="col">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col bg" style="background-image:url(https://i.ibb.co/MBFV2Qc/Ph-DHolder.png);">
+            <span class="num">33</span>
             <h4>30% PhD holders</h4>
           </div>
-          <div class="col bg "
-            style="background-image:url(https://i.ibb.co/5nCZr8d/Scolars.png) ;height:500px">
-            <span class="num" data-val="54">0</span>
+          <div class="col bg" style="background-image:url(https://i.ibb.co/5nCZr8d/Scolars.png);">
+            <span class="num">54</span>
             <h4>49% Scholars</h4>
           </div>
-
         </div>
       </div>
     </div>
   </section>
 
-  <section id="student" class="container-{breakpoint}  my-5">
+  <section id="student" class="container my-5">
     <h1 class="text-dark p-5 mt-5">Student</h1>
-    <div class="row row-cols-1 row-cols-md-2 " >
-      <div class=" col-md-6 bg" style="background-image:url(https://i.ibb.co/T4rj11S/No-Current-Students.jpg);height:500px">
-        <span class="num" data-val="493">0</span>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col bg" style="background-image:url(https://i.ibb.co/T4rj11S/No-Current-Students.jpg);">
+        <span class="num">493</span>
         <h4>Current Students 285 Male & 208 Female</h4>
       </div>
-      <div class=" col-md-6 bg" style="background-image:url(https://i.ibb.co/PCq14PZ/NoAlumni.jpg) ;height:500px">
-        <span class="num" data-val="1637">0</span>
-        <h4>30% PhD holders</h4>
+      <div class="col bg" style="background-image:url(https://i.ibb.co/PCq14PZ/NoAlumni.jpg);">
+        <span class="num">1637</span>
+        <h4 class="text-light">Alumni</h4>
       </div>
     </div>
   </section>
- 
-  <section id="research" class="container-{breakpoint} my-5 ">
-    <h1 class="text-dark p-5 mt-5">Research</h1>
-    <div class="row row-cols-1 row-cols-md-2 " >
-      <div class=" col-md-6 bg" style="background-image:url(https://i.ibb.co/g9HLdxS/Nofunded-Research.png);height:500px">
-        <br>
-       <span class="text-dark total" style="bottom: 50%;font-size: 50px;"> Total: SR </span>
-       <span class="num " data-val="4585800"  style="bottom: 50%;left: 35%;">0</span>
-     
-        <br>
-        <span class="textnum2" style="bottom: 30%;">External fund: SR</span>
-        <span class="num2" data-val="1252800"
-              style="bottom: 30%;left: 45%;">0</span>
-        <br>
-        <span class="textnum2" style="bottom: 20%;">Internal fund: SR</span>
-        <span class="num2" data-val="3333000"
-              style="bottom: 20%;left: 45%;">0</span>
-        </h4>
-      </div>
-      <div class=" col-md-6">
-        <div class="row row-cols-1 row-cols-md-2 ">
-          <div class=" col bg "
-            style="background-image:url(https://i.ibb.co/HrbtB7z/pulished-reaserch.jpg) ;height:500px">
-            <h4 style="bottom: 35% ;margin-bottom: 5%;" class="text-dark fw-bold fs-4">Published Reasearchs </h4>
-            <br><span class="textnum" style="bottom: 24%;">2018 :</span> <span class="num2" data-val="15"
-              style="bottom: 24%;">0</span>
-            <br><span class="textnum" style="bottom: 16%;">2019 :</span><span class="num2" data-val="35"
-              style="bottom: 16%;">0</span>
-            <br><span class="textnum" style="bottom: 8%;">2020 :</span><span class="num2" data-val="64"
-              style="bottom: 8%;">0</span>
-            <br><span class="textnum" style="bottom: 0%;">2021 :</span> <span class="num2" data-val="48"
-              style="bottom: 0%;">0</span>
 
-          </div>
-          <div class="col bg "
-            style="background-image:url(https://i.ibb.co/fNfC8Dt/Research-Under-Process.png) ;height:500px">
-            <span class="num" data-val="65">0</span>
-            <h4 class="text-dark fw-bold fs-4">Research Under Process</h4>
-          </div>
-
+<section id="research" class="container my-5">
+  <h1 class="text-dark p-5 mt-5">Research</h1>
+  <div class="row g-4">
+    <div class="col-md-6 bg" style="background-image:url(https://i.ibb.co/g9HLdxS/Nofunded-Research.png); padding: 20px; background-size: cover;">
+      <h4 class="text-dark fw-bold" style="margin-bottom: 20px;">Total Funding</h4>
+      <p style="font-size: 30px;">Total: SR <strong class="text-orange">4,585,800</strong></p>
+      <p style="font-size: 20px;">External Fund: SR <strong class="text-orange"><strong>1,252,800</strong></strong></p>
+      <p style="font-size: 20px;">Internal Fund: SR <strong class="text-orange"><strong>3,333,000</strong></strong></p>
+    </div>
+    
+    <div class="col-md-6">
+      <h4 class="text-dark fw-bold">Published Researches</h4>
+      <div class="row g-2">
+        <div class="col">
+          <p>2018: <strong class="text-orange">15</strong></p>
+          <p>2019: <strong class="text-orange">35</strong></p>
+        </div>
+        <div class="col">
+          <p>2020: <strong class="text-orange">64</strong></p>
+          <p>2021: <strong class="text-orange">48</strong></p>
         </div>
       </div>
+      
+      <h4 class="text-dark fw-bold mt-4">Research Under Process</h4>
+      <p style="font-size: 30px;"><strong class="text-orange">65</strong></p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="prize" class="container-{breakpoint}  my-5">
+<style>
+  .text-orange {
+    color: #e77500; /* Orange color */
+  }
+</style>
+  <section id="prize" class="container my-5">
     <h1 class="text-dark p-5 mt-5">Prize and Award</h1>
-    <div class="row row-cols-1 row-cols-md-2 " >
-      <div class=" col-md-6 bg  "
-        style="background-image:url(https://i.ibb.co/mTBw4vv/No-Of-Deanshipof-Students-Award.jpg);height:500px">
-        <span class="num" data-val="8">0</span>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col bg" style="background-image:url(https://i.ibb.co/mTBw4vv/No-Of-Deanshipof-Students-Award.jpg);">
+        <span class="num">8</span>
         <h4>Deanship of Students Award</h4>
       </div>
-      <div class=" col-md-6">
-        <div class="row row-cols-1 row-cols-md-2 ">
-          <div class="col bg "
-            style="background-image:url(https://i.ibb.co/FB6M3nz/Emloyee-Of-The-Month.png) ;height:500px">
-            <span class="num " data-val="8">0</span>
-            <h4 class="text-dark fw-bold fs-3">Employee Of The Month</h4>
+      <div class="col">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col bg" style="background-image:url(https://i.ibb.co/FB6M3nz/Emloyee-Of-The-Month.png);">
+            <span class="num">8</span>
+            <h4>Employee Of The Month</h4>
           </div>
 
-          <div class="col bg "
-            style="background-image:url(https://i.ibb.co/BGZhFd7/No-Presidental-Award.png) ;height: 500px;">
-            <span class="num" data-val="5">0</span>
-            <h4>Presidental Award</h4>
+          <div class="col bg" style="background-image:url(https://i.ibb.co/BGZhFd7/No-Presidental-Award.png);">
+            <span class="num">5</span>
+            <h4>Presidential Award</h4>
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
 
-
-
-  <script>
-    let valueDisplays = document.querySelectorAll(".num,.num2");
-    let interval = 1000;
-
-    valueDisplays.forEach((valueDisplay) => {
-      let startValue = 0;
-      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-      let duration = Math.floor(interval / endValue);
-      let counter = setInterval(function () {
-        startValue += 1;
-        valueDisplay.textContent = startValue;
-        if (startValue == endValue) {
-          clearInterval(counter);
-        }
-      }, duration);
-    });
-
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
